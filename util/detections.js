@@ -4,7 +4,6 @@ const videoElement = document.getElementById('video');
 
 function gotHands(results) {
   detections = results;
-
 }
 
 const hands = new Hands({
@@ -27,4 +26,3 @@ const camera = new Camera(videoElement, {
   width: 640,
   height: 480
 });
-camera.start();
