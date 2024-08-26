@@ -8,7 +8,7 @@ function gotHands(results) {
 
 const hands = new Hands({
   locateFile: (file) => {
-    return `https://cdn.jsdelivr.net/npm/@mediapipe/hands/${file}`;
+    return `./dependencies/${file}`;
   }
 });
 hands.setOptions({
