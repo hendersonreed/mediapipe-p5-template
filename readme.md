@@ -7,8 +7,7 @@ Read the comments in the code to get a sense of how things are working. The defa
 ## quickstart:
 
 ```bash
-git clone https://github.com/hendersonreed/mediapipe-p5-template.git && cd mediapipe-p5-template/hands-detection
-python -m http.server
+git clone https://github.com/hendersonreed/mediapipe-p5-template.git && cd mediapipe-p5-template/
+./runner fetch
+./runner serve hand-detection # attempts to open $BROWSER
 ```
-
-Visit http://localhost:8000/ in your browser of choice and hit `space` to start. You'll need to grant it access to your webcam.

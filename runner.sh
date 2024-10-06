@@ -36,19 +36,19 @@ elif [[ $command = "fetch" ]] ; then
 elif [[ $command = "serve" ]] ; then
 	if [[ -z "$subcommand" ]] ; then
 		echo "serving this directory."
-		(sleep 2 && firefox "http://localhost:3030") &
+		(sleep 2 && $BROWSER "http://localhost:3030") &
 		python -m http.server 3030
 
 	elif [[ "$subcommand" = "face-detection" ]] ; then
 		echo "serving face-detection."
 		cd face-detection || exit 1
-		(sleep 2 && firefox "http://localhost:3030") &
+		(sleep 2 && $BROWSER "http://localhost:3030") &
 		python -m http.server 3030
 
 	elif [[ "$subcommand" = "hand-detection" ]] ; then
 		echo "serving hand-detection."
 		cd hand-detection || exit 1
-		(sleep 2 && firefox "http://localhost:3030") &
+		(sleep 2 && $BROWSER "http://localhost:3030") &
 		python -m http.server 3030
 
 	else
