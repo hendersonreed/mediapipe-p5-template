@@ -88,7 +88,7 @@ body {
     border: 2px solid black;
     transform: scaleX(-1);
 }
-#videoElement {
+#video {
     position: absolute;
     z-index: 5;
     transform: scaleX(-1);
